@@ -1,173 +1,408 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Levin Munyelele | Developer & Data Scientist</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Levin Munyelele | Developer & Data Scientist</title>
 
-  <!-- Tailwind CSS -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      darkMode: 'class'
-    }
-  </script>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+      };
+    </script>
 
-  <!-- AOS + Icons -->
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-jQbu1b7K+YeYkTbL9H+CBfF4h5uIY/cxHHQwVjF9s84Q4LjXLyKoFYRGGjElPVd5Z+enF2mnH0J3xv+T8zWyqA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- AOS + Icons -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
 
-  <link rel="stylesheet" href="style.css">
-</head>
-<body class="bg-[#1d434e] text-white transition duration-300 dark:bg-white dark:text-[#1d434e]">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body
+    class="bg-[#1d434e] text-white transition duration-300 dark:bg-white dark:text-[#1d434e]"
+  >
+    <!-- Navbar -->
+    <header class="flex justify-between items-center p-6">
+      <h1 class="text-xl font-bold">Levin Munyelele</h1>
+      <div class="flex items-center gap-4">
+        <nav class="hidden md:flex gap-6">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#blog">Blog</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <button id="themeToggle" class="text-xl">
+          <i class="fas fa-moon"></i>
+        </button>
+      </div>
+    </header>
 
-  <!-- Navbar -->
-  <header class="flex justify-between items-center p-6">
-    <h1 class="text-xl font-bold">Levin Munyelele</h1>
-    <div class="flex items-center gap-4">
-      <nav class="hidden md:flex gap-6">
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#blog">Blog</a>
-        <a href="#contact">Contact</a>
-      </nav>
-      <button id="themeToggle" class="text-xl"><i class="fas fa-moon"></i></button>
-    </div>
-  </header>
+    <!-- Hero -->
+    <section
+      class="py-24 flex flex-col justify-center items-center text-center px-4"
+    >
+      <h1 class="text-5xl font-bold mb-4">Levin Munyelele</h1>
+      <p class="text-xl mb-6">
+        Software Developer | Data Scientist | Innovator
+      </p>
+      <div class="space-x-4">
+        <a href="#projects" class="btn-primary">See My Projects</a>
+        <a href="Levin Munyelele (2)" download class="btn-outline"
+          >Download CV</a
+        >
+      </div>
+    </section>
 
-  <!-- Hero -->
-  <section class="py-24 flex flex-col justify-center items-center text-center px-4">
-    <h1 class="text-5xl font-bold mb-4">Levin Munyelele</h1>
-    <p class="text-xl mb-6">Software Developer | Data Scientist</p>
-    <div class="space-x-4">
-      <a href="#projects" class="btn-primary">See My Projects</a>
-      <a href="Levin Munyelele Resume.pdf" download class="btn-outline">Download CV</a>
-    </div>
-  </section>
+    <!-- About -->
+    <section id="about" class="bg-white text-[#1d434e] py-16 px-6">
+      <div class="max-w-3xl mx-auto text-center">
+        <h2 class="section-title">About Me</h2>
+        <p class="mb-6">
+          I’m <strong>Levin Munyelele</strong>, a
+          <strong>Full-Stack Developer</strong> and
+          <strong>Data Scientist</strong> passionate about creating intelligent,
+          scalable, and user-centered digital solutions. I work across the
+          entire development stack — from building dynamic front-ends with
+          <strong>Angular</strong> and <strong>Flutter</strong> to developing
+          secure and efficient back-ends with <strong>Laravel</strong>,
+          <strong>Yii2</strong>, and <strong>Node.js</strong>. I also leverage
+          <strong>data science</strong> and <strong>AI</strong> to transform
+          data into actionable insights that empower smarter decisions across
+          different sectors.
+        </p>
 
-  <!-- About -->
-  <section id="about" class="bg-white text-[#1d434e] py-16 px-6">
-    <div class="max-w-3xl mx-auto text-center">
-      <h2 class="section-title">About Me</h2>
-      <p>I’m a Nairobi-based developer passionate about building impactful applications in health, data, and digital tools.</p>
-    </div>
-  </section>
+        <div
+          class="flex flex-wrap justify-center gap-3 text-sm font-medium text-[#16353d]"
+        >
+          <span class="bg-[#e8f2f4] px-4 py-2 rounded-full shadow"
+            >Web & Mobile Development</span
+          >
+          <span class="bg-[#e8f2f4] px-4 py-2 rounded-full shadow"
+            >AI & Data Science</span
+          >
+          <span class="bg-[#e8f2f4] px-4 py-2 rounded-full shadow"
+            >APIs & Automation</span
+          >
+          <span class="bg-[#e8f2f4] px-4 py-2 rounded-full shadow"
+            >Cloud & DevOps</span
+          >
+          <span class="bg-[#e8f2f4] px-4 py-2 rounded-full shadow"
+            >Database Design</span
+          >
+        </div>
+      </div>
+    </section>
 
-  <!-- Skills -->
-  <section id="skills" class="py-16 px-6 text-center">
-    <h2 class="section-title">Skills</h2>
-    <div class="flex flex-wrap justify-center">
+    <!-- Skills -->
+    <section id="skills" class="py-16 px-6 text-center">
+      <h2 class="section-title">Technical Skills</h2>
+
+      <h3 class="mt-8 mb-4 text-lg font-semibold text-gray-300">🌐 Frontend</h3>
+      <div class="flex flex-wrap justify-center gap-2">
         <span class="skill-badge">Angular</span>
         <span class="skill-badge">Ionic</span>
-        <span class="skill-badge">Yii2</span>
-        <span class="skill-badge">Python</span>
-        <span class="skill-badge">MySQL</span>
+        <span class="skill-badge">Flutter</span>
         <span class="skill-badge">Tailwind CSS</span>
-        <span class="skill-badge">PHP</span>
         <span class="skill-badge">TypeScript</span>
         <span class="skill-badge">JavaScript</span>
-        <span class="skill-badge">Git</span>
-        <span class="skill-badge">REST APIs</span>
-        <span class="skill-badge">Data Visualization</span>
-        <span class="skill-badge">Pandas</span>
-        <span class="skill-badge">Seaborn</span>
-        <span class="skill-badge">Matplotlib</span>
-        <span class="skill-badge">Jupyter Notebook</span>
-    </div>
-  </section>
+      </div>
 
-  <!-- Projects -->
-  <section id="projects" class="py-16 px-6">
-    <div class="max-w-5xl mx-auto text-center">
-      <h2 class="section-title" data-aos="fade-right">Projects</h2>
+      <h3 class="mt-8 mb-4 text-lg font-semibold text-gray-300">⚙️ Backend</h3>
+      <div class="flex flex-wrap justify-center gap-2">
+        <span class="skill-badge">PHP (Yii2, Laravel)</span>
+        <span class="skill-badge">Python (Flask, FastAPI)</span>
+        <span class="skill-badge">Node.js</span>
+        <span class="skill-badge">Java (Spring Boot)</span>
+        <span class="skill-badge">RESTful APIs</span>
+        <span class="skill-badge">MySQL</span>
+        <span class="skill-badge">Firebase</span>
+      </div>
+
+      <h3 class="mt-8 mb-4 text-lg font-semibold text-gray-300">
+        🤖 Data Science & AI
+      </h3>
+      <div class="flex flex-wrap justify-center gap-2">
+        <span class="skill-badge">Pandas</span>
+        <span class="skill-badge">NumPy</span>
+        <span class="skill-badge">Scikit-learn</span>
+        <span class="skill-badge">TensorFlow</span>
+        <span class="skill-badge">Matplotlib</span>
+        <span class="skill-badge">Seaborn</span>
+        <span class="skill-badge">Data Visualization</span>
+        <span class="skill-badge">Jupyter Notebook</span>
+        <span class="skill-badge">Power BI</span>
+        <span class="skill-badge">Excel (Advanced)</span>
+      </div>
+
+      <h3 class="mt-8 mb-4 text-lg font-semibold text-gray-300">
+        🧰 Tools & Platforms
+      </h3>
+      <div class="flex flex-wrap justify-center gap-2">
+        <span class="skill-badge">Git & GitHub</span>
+        <span class="skill-badge">Docker</span>
+        <span class="skill-badge">Linux</span>
+        <span class="skill-badge">VS Code</span>
+        <span class="skill-badge">AWS</span>
+        <span class="skill-badge">Jira</span>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="py-16 px-6">
+      <div class="max-w-5xl mx-auto text-center">
+        <h2 class="section-title" data-aos="fade-right">Projects</h2>
+        <div class="grid md:grid-cols-2 gap-8">
+          <div class="glass p-6 rounded-xl shadow-md" data-aos="fade-up">
+            <h3 class="text-2xl font-semibold mb-2">
+              DREAMs Kenya EMR Mobile App
+            </h3>
+            <p class="mb-4">
+              A mobile extension of the DREAMs Kenya electronic medical records
+              system, enabling clinicians and health workers to record patient
+              visits, sync data with the EMR backend, and manage facility-level
+              health data from Android devices.
+            </p>
+            <p class="text-sm italic mb-4">
+              Skills: Ionic, Angular, TypeScript, REST API Integration, Offline
+              Sync, Health Data Systems
+            </p>
+            <div class="flex flex-col md:flex-row justify-center gap-3">
+              <a
+                href="https://github.com/Levinmunyelele/DreamskenyaEMRVersionAPP"
+                target="_blank"
+                class="underline text-sm hover:text-[#00bcd4]"
+              >
+                💻 View on GitHub
+              </a>
+              <a
+                href="https://drive.google.com/file/d/1NHJXRnENiGxTEqIoodJsSLFjGMXpi7sW/view?usp=sharing"
+                target="_blank"
+                class="underline text-sm hover:text-[#00bcd4]"
+              >
+                🎥 Watch Demo
+              </a>
+            </div>
+          </div>
+
+          <div class="glass p-6 rounded-xl shadow-md" data-aos="fade-up">
+            <h3 class="text-2xl font-semibold mb-2">
+              QualiPharms Inventory App
+            </h3>
+            <p class="mb-4">
+              A hospital drug inventory system built with
+              <strong>Angular</strong> and <strong>Yii2</strong>
+              to monitor drug consumption and automate refills in health
+              facilities across Kenya.
+            </p>
+            <ul class="list-disc list-inside mb-4 text-sm">
+              <li>Role-based access for different health levels.</li>
+              <li>Tracks stock levels, usage, and monthly reports.</li>
+              <li>Offline data support and backend synchronization.</li>
+            </ul>
+            <a
+              href="https://github.com/Levinmunyelele/qualipharm"
+              target="_blank"
+              class="text-blue-500 font-medium hover:underline"
+              >View on GitHub</a
+            >
+          </div>
+
+          <div class="glass p-6 rounded-xl shadow-md">
+            <h3 class="text-2xl font-semibold mb-2">
+              MOBITREAT – AI-based ATM Hospital
+            </h3>
+            <p class="mb-2">
+              AI-driven mobile health platform tackling healthcare
+              accessibility.
+            </p>
+            <p class="text-sm italic mb-4">
+              Skills: Data Analysis, Machine Learning, Research
+            </p>
+            <a
+              href="https://youtu.be/4QNZw568yc8"
+              target="_blank"
+              class="underline text-sm"
+              >🎥 Watch pitch video</a
+            >
+          </div>
+
+          <div class="glass p-6 rounded-xl shadow-md" data-aos="fade-up">
+            <h3 class="text-2xl font-semibold mb-2">
+              Face Recognition / Detection App
+            </h3>
+            <p class="mb-4">
+              A face detection and recognition web app built using the Google
+              Vision API. Upload an image, and the app identifies faces and
+              overlays bounding boxes.
+            </p>
+            <ul class="list-disc list-inside mb-4 text-sm">
+              <li>Uses Google Vision API for face detection tasks.</li>
+              <li>
+                Displays bounding boxes and confidence scores for detected
+                faces.
+              </li>
+              <li>Front-end UI for image upload and result presentation.</li>
+            </ul>
+            <a
+              href="https://github.com/Levinmunyelele/faceRecognitionApp"
+              target="_blank"
+              class="text-blue-500 font-medium hover:underline"
+              >View on GitHub</a
+            >
+          </div>
+
+          <div class="glass p-6 rounded-xl shadow-md" data-aos="fade-up">
+            <h3 class="text-2xl font-semibold mb-2">
+              Nairobi Healthcare Access Analysis
+            </h3>
+            <p class="mb-4">
+              A data-driven exploration of healthcare access disparities across
+              Nairobi sub-counties, using census and facility data to identify
+              underserved areas.
+            </p>
+            <ul class="list-disc list-inside mb-4 text-sm">
+              <li>
+                Cleaned & merged multiple public datasets (census, Kenya Master
+                Facility List).
+              </li>
+              <li>
+                Computed metrics like facilities per 10,000 people to quantify
+                access gaps.
+              </li>
+              <li>
+                Visualized geospatial and statistical disparities for resource
+                allocation insights.
+              </li>
+            </ul>
+            <a
+              href="https://github.com/Levinmunyelele/nairobi-healthcare-access-analysis"
+              target="_blank"
+              class="text-blue-500 font-medium hover:underline"
+              >View on GitHub</a
+            >
+          </div>
+
+          <div class="glass p-6 rounded-xl shadow-md">
+            <h3 class="text-2xl font-semibold mb-2">
+              Kenya Rainfall Predictor
+            </h3>
+            <p class="mb-4">
+              Random Forest model forecasting rainfall using weather APIs.
+            </p>
+            <a
+              href="https://github.com/levinmunyelele/rainfall-predictor"
+              target="_blank"
+              >View on GitHub</a
+            >
+          </div>
+
+          <div class="glass p-6 rounded-xl shadow-md">
+            <h3 class="text-2xl font-semibold mb-2">Job Tracker App</h3>
+            <p class="mb-4">
+              A mobile app (Ionic + Firebase) for managing job applications
+              efficiently.
+            </p>
+            <a href="#" target="_blank">Coming Soon</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Blog -->
+    <section id="blog" class="py-16 px-6 text-center">
+      <h2 class="section-title">Latest Blog Posts</h2>
       <div class="grid md:grid-cols-2 gap-8">
         <div class="glass p-6 rounded-xl">
-          <h3 class="text-2xl font-semibold mb-2">MOBITREAT – AI-based ATM Hospital</h3>
-          <p class="mb-2">A collaborative team project tackling healthcare gaps in Kenya by creating an AI-driven mobile medical dispensing system.</p>
-          <p class="text-sm mb-4 italic">Skills: Data Analysis, Data Visualization, Research</p>
-          <a href="https://youtu.be/4QNZw568yc8?si=g-P9cPR-yz7u50t7" target="_blank" class="underline text-sm">🎥 Watch pitch video</a>
+          <h3 class="text-xl font-bold">Building Inventory Systems</h3>
+          <p>
+            How I designed a facility inventory system for Kenyan health
+            clinics.
+          </p>
         </div>
-
-        <div class="glass p-6 rounded-xl shadow-md" data-aos="fade-up">
-          <h3 class="text-2xl font-semibold mb-2">Health Data Dashboard</h3>
-          <p class="mb-4">Dash + Plotly dashboard visualizing HIV, TB, and Malaria stats in Kenya.</p>
-          <a href="https://github.com/levinmunyelele/health-dashboard" target="_blank">View on GitHub</a>
+        <div class="glass p-6 rounded-xl">
+          <h3 class="text-xl font-bold">
+            Top Tools Every Data Scientist Should Know
+          </h3>
+          <p>
+            From Jupyter to Plotly, these are my top tools for data workflows.
+          </p>
         </div>
-
-        <div class="glass p-6 rounded-xl shadow-md" data-aos="fade-up" data-aos-delay="100">
-          <h3 class="text-2xl font-semibold mb-2">Inventory Management System</h3>
-          <p class="mb-4">Angular + Yii2-based inventory platform used in public health settings.</p>
-          <a href="https://github.com/levinmunyelele/inventory-app" target="_blank">View on GitHub</a>
-        </div>
-
-        <div class="glass p-6 rounded-xl shadow-md" data-aos="fade-up" data-aos-delay="200">
-          <h3 class="text-2xl font-semibold mb-2">Job Tracker App</h3>
-          <p class="mb-4">App for job seekers to manage job applications. Built with Ionic + Firebase.</p>
-          <a href="#">Coming soon</a>
-        </div>
-
-        <div class="glass p-6 rounded-xl shadow-md" data-aos="fade-up" data-aos-delay="300">
-          <h3 class="text-2xl font-semibold mb-2">Kenya Rainfall Predictor</h3>
-          <p class="mb-4">Random Forest regression ML project for rainfall forecasting using weather APIs.</p>
-          <a href="#">Coming soon</a>
+        <div class="glass p-6 rounded-xl">
+          <h3 class="text-xl font-bold">AI and Healthcare in Africa</h3>
+          <p>
+            Reflections on AI, genomics, and data science in improving health
+            equity.
+          </p>
+          <a
+            href="https://www.linkedin.com/in/levinmunyelele"
+            target="_blank"
+            class="underline text-sm mt-2 inline-block"
+          >
+            Read on LinkedIn
+          </a>
         </div>
       </div>
-    </div>
-  </section>
-  </section>
+    </section>
 
-  <!-- Blog -->
-  <section id="blog" class="py-16 px-6 text-center">
-    <h2 class="section-title">Latest Blog Posts</h2>
-    <div class="grid md:grid-cols-2 gap-8">
-      <div class="glass p-6 rounded-xl">
-        <h3 class="text-xl font-bold">Building Inventory Systems</h3>
-        <p>How I designed a facility inventory system for Kenyan health clinics.</p>
+    <!-- Contact -->
+    <section id="contact" class="bg-[#16353d] py-16 px-6 text-center">
+      <h2 class="section-title">Let's Connect</h2>
+      <form
+        action="https://formspree.io/f/yourID"
+        method="POST"
+        class="max-w-xl mx-auto grid gap-4"
+      >
+        <input
+          type="text"
+          name="name"
+          placeholder="Your Name"
+          required
+          class="p-3 rounded text-[#1d434e]"
+        />
+        <input
+          type="email"
+          name="email"
+          placeholder="Your Email"
+          required
+          class="p-3 rounded text-[#1d434e]"
+        />
+        <textarea
+          name="message"
+          placeholder="Your Message"
+          rows="5"
+          class="p-3 rounded text-[#1d434e]"
+        ></textarea>
+        <button type="submit" class="btn-primary">Send Message</button>
+      </form>
+      <div class="mt-6">
+        <a href="https://github.com/Levinmunyelele" class="mr-4 text-2xl"
+          ><i class="fab fa-github"></i
+        ></a>
+        <a href="https://linkedin.com/in/levinmunyelele" class="text-2xl"
+          ><i class="fab fa-linkedin"></i
+        ></a>
       </div>
-      <div class="glass p-6 rounded-xl">
-        <h3 class="text-xl font-bold">5 Tools Every Data Scientist Should Know</h3>
-        <p>From Jupyter to Plotly, these are my top tools for DS workflows.</p>
-      </div>
-      <div class="glass p-6 rounded-xl">
-        <h3 class="text-xl font-bold">🧬 Rewriting the Human Genome</h3>
-        <p>
-          Why the Human Pangenome Reference is a game-changer for equity in genomics, AI in healthcare, and data science. My reflections as a Kenyan computer scientist.
-        </p>
-        <a href="https://www.linkedin.com/posts/levinmunyelele_genomics-pangenome-bioinformatics-activity..." target="_blank" class="underline text-sm mt-2 inline-block">
-          Read on LinkedIn
-        </a>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Contact -->
-  <section id="contact" class="bg-[#16353d] py-16 px-6 text-center">
-    <h2 class="section-title">Let's Connect</h2>
-    <form action="https://formspree.io/f/yourID" method="POST" class="max-w-xl mx-auto grid gap-4">
-      <input type="text" name="name" placeholder="Your Name" required class="p-3 rounded">
-      <input type="email" name="email" placeholder="Your Email" required class="p-3 rounded">
-      <textarea name="message" placeholder="Your Message" rows="5" class="p-3 rounded"></textarea>
-      <button type="submit" class="btn-primary">Send Message</button>
-    </form>
-    <div class="mt-6">
-      <a href="https://github.com/Levinmunyelele" class="mr-4 text-2xl"><i class="fab fa-github"></i></a>
-      <a href="https://linkedin.com/in/levinmunyelele" class="text-2xl"><i class="fab fa-linkedin"></i></a>
-    </div>
-  </section>
+    <!-- Footer -->
+    <footer class="bg-[#122b31] text-center py-4 text-sm">
+      © 2025 Levin Munyelele. Built with ❤️ from Nairobi.
+    </footer>
 
-  <!-- Footer -->
-  <footer class="bg-[#122b31] text-center py-4 text-sm">
-    © 2025 Levin Munyelele. Built with ❤️ from Nairobi.
-  </footer>
-
-  <!-- Scripts -->
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>AOS.init();</script>
-  <script>
-    document.getElementById('themeToggle').addEventListener('click', () => {
-      document.documentElement.classList.toggle('dark');
-    });
-  </script>
-</body>
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script>
+      document.getElementById("themeToggle").addEventListener("click", () => {
+        document.documentElement.classList.toggle("dark");
+      });
+    </script>
+  </body>
 </html>
