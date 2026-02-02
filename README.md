@@ -3,7 +3,7 @@
 This is a personal portfolio website for Levin Munyelele showcasing projects, skills, blog posts, and contact details.
 
 ## 🌐 Live Website
-Hosted via GitHub Pages: `https://yourusername.github.io/portfolio`
+Hosted via GitHub Pages: `https://levinmunyelele.github.io/portfolio`
 
 ## 📂 Folder Structure
 ```
