@@ -52,39 +52,39 @@
     </header>
 
     <section class="min-h-screen flex flex-col md:flex-row items-center justify-center px-6 pt-24 md:pt-0 gap-12 max-w-7xl mx-auto">
-  
-  <div class="text-center md:text-left md:w-1/2 order-2 md:order-1" data-aos="fade-right">
-    <h1 class="text-5xl md:text-7xl font-extrabold mb-6 tracking-tight">
-      Hi, I'm <span class="text-transparent bg-clip-text bg-gradient-to-r from-secondary to-blue-400">Levin</span>
-    </h1>
-    <p class="text-xl md:text-2xl mb-8 text-gray-600 dark:text-gray-300 h-16 md:h-auto">
-      I am a <span id="typing-element" class="text-secondary font-bold"></span>
-    </p>
-    
-    <div class="flex gap-4 justify-center md:justify-start">
-      <a href="#projects" class="btn-primary">View Projects</a>
-      <a href="resume.pdf" download class="btn-outline">
-        <i class="fas fa-download mr-2"></i>Download CV
-      </a>
-    </div>
-  </div>
-
-  <div class="md:w-1/2 flex justify-center order-1 md:order-2" data-aos="fade-left">
-    <div class="relative">
-      <div class="absolute inset-0 bg-secondary blur-3xl opacity-20 rounded-full"></div>
       
-      <img 
-        src="me.png" 
-        alt="Levin Munyelele" 
-        class="relative w-64 h-64 md:w-80 md:h-80 object-cover rounded-full border-4 border-white dark:border-[#1d434e] shadow-2xl transform hover:scale-105 transition duration-500"
-      >
-    </div>
-  </div>
+      <div class="text-center md:text-left md:w-1/2 order-2 md:order-1" data-aos="fade-right">
+        <h1 class="text-5xl md:text-7xl font-extrabold mb-6 tracking-tight">
+          Hi, I'm <span class="text-transparent bg-clip-text bg-gradient-to-r from-secondary to-blue-400">Levin</span>
+        </h1>
+        <p class="text-xl md:text-2xl mb-8 text-gray-600 dark:text-gray-300 h-16 md:h-auto">
+          I am a <span id="typing-element" class="text-secondary font-bold"></span>
+        </p>
+        
+        <div class="flex gap-4 justify-center md:justify-start">
+          <a href="#projects" class="btn-primary">View Projects</a>
+          <a href="resume.pdf" download class="btn-outline">
+            <i class="fas fa-download mr-2"></i>Download CV
+          </a>
+        </div>
+      </div>
 
-  <a href="#about" class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce text-gray-400 hidden md:block">
-    <i class="fas fa-chevron-down text-2xl"></i>
-  </a>
-</section>
+      <div class="md:w-1/2 flex justify-center order-1 md:order-2" data-aos="fade-left">
+        <div class="relative">
+          <div class="absolute inset-0 bg-secondary blur-3xl opacity-20 rounded-full"></div>
+          
+          <img 
+            src="me.png" 
+            alt="Levin Munyelele" 
+            class="relative w-64 h-64 md:w-80 md:h-80 object-cover rounded-full border-4 border-white dark:border-[#1d434e] shadow-2xl transform hover:scale-105 transition duration-500"
+          >
+        </div>
+      </div>
+
+      <a href="#about" class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce text-gray-400 hidden md:block">
+        <i class="fas fa-chevron-down text-2xl"></i>
+      </a>
+    </section>
 
     <section id="about" class="py-20 px-6 bg-white dark:bg-[#16353d]">
       <div class="max-w-4xl mx-auto text-center">
@@ -118,7 +118,7 @@
             <ul class="list-disc ml-5 space-y-2 text-gray-600 dark:text-gray-400">
               <li>Engineered the end-to-end <strong>'Qualipharm'</strong> supply chain system using PHP (Yii2) for the backend and Angular/Ionic for the responsive frontend.</li>
               <li>Developed the <strong>KenyaEMR Mobile Client</strong>, integrating a mobile-first frontend with the central OpenMRS (Java) backend via secure RESTful APIs.</li>
-              <li>Optimized the National HIV Dashboard's MySQL backend by refactoring slow queries, significantly reducing report generation time</li>
+              <li>Optimized the National HIV Dashboard's MySQL backend by refactoring slow queries, significantly reducing report generation time.</li>
               <li>Conducted rigorous data validation and API testing using Postman to ensure system reliability.</li>
             </ul>
           </div>
@@ -284,7 +284,16 @@
             <h3 class="text-2xl font-bold mb-2 group-hover:text-secondary transition">Nairobi Health Analytics</h3>
             <p class="text-sm text-gray-500 dark:text-gray-400 mb-4">Python • Pandas • Geospatial Analysis</p>
             <p class="mb-6 text-gray-700 dark:text-gray-300">
-              A data science project analyzing healthcare access disparities in Nairobi. Merged census and facility data to visualize underserved
+              A data science project analyzing healthcare access disparities in Nairobi. Merged census and facility data to visualize underserved sub-counties to aid resource allocation.
+            </p>
+            <div class="flex gap-4">
+              <a href="https://github.com/Levinmunyelele/nairobi-healthcare-access-analysis" target="_blank" class="btn-sm-outline"><i class="fab fa-github mr-2"></i>View Notebook</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
 
     <section id="contact" class="py-20 px-6 text-center bg-gray-50 dark:bg-[#16353d]">
       <div class="max-w-2xl mx-auto" data-aos="zoom-in">
@@ -372,8 +381,3 @@
     </script>
   </body>
 </html>
-
-
-
-
-
